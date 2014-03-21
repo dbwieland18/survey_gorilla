@@ -11,6 +11,7 @@ post '/sessions' do
 		@error = "something went wrong"
 		redirect_to "sessions/new"
 	end
+end
 
 post 'sessions/destroy' do
 	session[:user_id] = nil
