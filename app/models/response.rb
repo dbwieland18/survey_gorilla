@@ -3,6 +3,3 @@ class Response < ActiveRecord::Base
   belongs_to :user
 end
 
-.template {
-  display:none;
-}
