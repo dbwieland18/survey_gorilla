@@ -1,8 +1,11 @@
 <div class="container">
 	<h1>RESULTS for survey <%=@survey.title%></h1>
-		<% @responses.each do |response| %>
-			<p><%= response.answer %></p>
+		<% @responses_hash.each do |answer, occurrences| %>
+			<p><%= answer %> : <%= occurrences %></p>
 		<% end %>
 </div>
+
+
+
 
 
