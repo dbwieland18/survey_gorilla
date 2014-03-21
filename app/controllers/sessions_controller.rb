@@ -6,14 +6,14 @@ post '/sessions' do
 	@user = User.find_by(email: params[:email])
 	if @user.password == params[:password]
 		session[:user_id] = @user.id
-		redirect_to "/"
+		redirect to "/"
 	else
 		@error = "something went wrong"
-		redirect_to "sessions/new"
+		redirect to "sessions/new"
 	end
 end
 
 post 'sessions/destroy' do
 	session[:user_id] = nil
-	redirect_to "/sessions/new"
+	redirect to "/sessions/new"
 end

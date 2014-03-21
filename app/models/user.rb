@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
   has_many :taken_surveys
   has_many :responses
 
+  include BCrypt
+
   def password
     @password ||= Password.new(password_digest)
   end
