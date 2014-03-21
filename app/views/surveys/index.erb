@@ -1,5 +1,5 @@
 <div class="container">
 	<% @surveys.each do |survey| %>
-	  <p><a href="/surveys/<%=survey.id%>"><%= survey.title %></a></p>
+	  <p><a href="/surveys/<%=survey.id%>"><%= survey.title %></a> -- <a href="surveys/<%=survey.id%>/results">view results</a></p>
 	<% end %>
 </div>

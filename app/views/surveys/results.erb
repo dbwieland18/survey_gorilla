@@ -1,0 +1,8 @@
+<div class="container">
+	<h1>RESULTS for survey <%=@survey.title%></h1>
+		<% @responses.each do |response| %>
+			<p><%= response.answer %></p>
+		<% end %>
+</div>
+
+

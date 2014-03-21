@@ -1,12 +1,15 @@
-<h1><%=@survey.title%></h1>
-<form action="/response" method="POST">
-	<% @survey.questions.each do |question| %>
-		<p><%=question.text%></p>
-		<select name="answer">
-			<%question.possible_choices.each do |possible|%>
-			<option value=<%=possible.option%>><%=possible.option%></option>
-			<%end%>
-		</select>
-	<% end %>
-	<input type="submit">
-</form>
+<div class="container">
+	<h1><%=@survey.title%></h1>
+	<form action="/response" method="POST">
+		<% @survey.questions.each do |question| %>
+		<input type="hidden" name="question" value=<%=question.id%>>
+			<p><%=question.text%></p>
+			<select name="answer">
+				<%question.possible_choices.each do |possible|%>
+				<option><%=possible.option%></option>
+				<%end%>
+			</select>
+		<% end %>
+		<input type="submit">
+	</form>
+</div>
