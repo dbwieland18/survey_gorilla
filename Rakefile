@@ -108,8 +108,8 @@ namespace :db do
   end
 
   desc "Populate the database with dummy data by running db/seeds.rb"
-  task :seed_1 do
-    require APP_ROOT.join('db', 'seeds_1.rb')
+  task :seed do
+    require APP_ROOT.join('db', 'seed.rb')
   end
 
   desc "Populate the database with dummy data by running db/seeds.rb"
