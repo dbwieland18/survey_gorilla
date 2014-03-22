@@ -10,3 +10,7 @@ th {
 }
 
 img { border-radius: 10px;}
+
+.template {
+  display:none;
+}
