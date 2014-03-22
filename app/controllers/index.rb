@@ -5,7 +5,7 @@ get '/' do
   	redirect to "/sessions/new"
   else
   	@user = User.find(session[:user_id])
-  	erb :index
+  	erb :index, :layout => false
   end
 end
 

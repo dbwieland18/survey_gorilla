@@ -1,22 +1,25 @@
-<% if @error %>
+<div class="container">
 
-	<p style="color: red;"><%= @error %></p>
+	<% if @error %>
 
-<% end %>
+		<p style="color: red;"><%= @error %></p>
 
-<h1>Hi there</h1>
+	<% end %>
 
-<form action="/sessions" method="post">
-	<p>
-		<label for="email">Email:</label>
-		<input type="text" name="email" placeholder="email"/>
-  </p>
+	<h1>Hi there, please sign in to take or create a survey.</h1>
 
-	<p>
-	<label for="password">Password:</label>
-	<input type="password" name="password" placeholder="password"/>
-	</p>
+	<form action="/sessions" method="post">
+		<p>
+			<label for="email">Email:</label>
+			<input type="text" name="email" placeholder="email"/>
+	  </p>
 
-	<input type="submit" value="Login"/>
+		<p>
+		<label for="password">Password:</label>
+		<input type="password" name="password" placeholder="password"/>
+		</p>
 
-</form>
+		<input type="submit" value="Login"/>
+
+	</form>
+</div>
