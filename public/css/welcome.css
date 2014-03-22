@@ -2,11 +2,12 @@
 body {
   background-image: url("http://o.onionstatic.com/images/23/23114/original/700.hq.jpg?3267");
   background-size: cover;
+  font-family: 'Carrois Gothic SC', sans-serif;
 }
 
 .container {
   margin: 0 auto;
-  width: 600px;
+  width: 900px;
   padding: 0px 20px 20px 20px;
   border-radius: 10px;
   /*background: darkgrey;*/
@@ -20,6 +21,8 @@ body {
 h1 {
 	margin: 0;
 	color: white;
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-size: 60px;
 }
 th {
   text-align: left;
