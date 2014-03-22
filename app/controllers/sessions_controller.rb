@@ -13,7 +13,7 @@ post '/sessions' do
 	end
 end
 
-post 'sessions/destroy' do
+get '/sessions/destroy' do
 	session[:user_id] = nil
 	redirect to "/sessions/new"
 end
