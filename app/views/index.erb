@@ -1,13 +1,47 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/welcome.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+
+  <title></title>
+</head>
+<body>
+  <div id="navbar">
+    <ul id="navlist">
+      <li><a href="/">HOME</a></li>
+      <li><a href="/sessions/new">sign in</a></li>
+      <li><a href="/users/new">register</a></li>
+      <li><a href="/sessions/destroy">logout</a></li>
+    </ul>
+  </div>
+  <div class="container">
   <div id="welcome">
     <h1>Welcome to Survey Gorilla!</h1>
+  </div>
+  <div id="empty">
   </div>
   
 
 
   <!-- <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9DPt0CUam-vxVk1Er-grlvQDyGGNsnS-svDKWXCgRJgCKh-sL8w"> -->
   <div id="options">
-    <a class="button" href="/surveys">take a survey</a>
-    <a class="button" href="/surveys/new">create a survey</a>
+    <ul>
+      <a class="button" href="/surveys"><li>take a survey</li></a>
+      <a class="button" href="/surveys/new"><li>create a survey</li></a>
+    </ul>
   </div>
 </div>
+</body>
+</html>
