@@ -29,9 +29,6 @@ end
 
 # Create a new survey (create)
 post "/surveys" do
-  # puts "\n\n\n\n\n\n\n"
-  # puts params.inspect
-  # puts "\n\n\n\n\n\n\n"
   @survey = Survey.create(title: params[:title], user_id: session[:user_id])
   @question = Question.create(text: params[:question], survey_id: @survey.id)
   params[:possible].shift
