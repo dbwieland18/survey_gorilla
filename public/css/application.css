@@ -1,9 +1,24 @@
+
+body {
+  background: lightgray;
+}
+
 .container {
-  margin: 20px auto;
+  margin: 0 auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
-  background: lightgrey;
+  border-radius: 10px;
+  /*background: darkgrey;*/
+  text-align: center;
+}
+
+#welcome {
+	padding: 30px;
+}
+
+h1 {
+	margin: 0;
+	color: gray;
 }
 th {
   text-align: left;
@@ -11,6 +26,65 @@ th {
 
 img { border-radius: 10px;}
 
+
 .template {
   display:none;
 }
+
+a {
+	text-decoration: none;
+}
+
+#welcome {
+	clear: both;
+	text-align: center;
+}
+
+#options {
+	width: 240px;
+	margin: 0 auto;
+}
+
+#navbar {
+	/*background-color: black;*/
+	height: 100px;
+}
+
+#navlist {
+	float: right;
+	margin: 0;
+}
+
+#navlist li{
+	display: inline-block;
+	padding-right: 60px;
+	list-style: none;
+	line-height: 100px;
+}
+
+#navlist li a {
+	color: gray;
+}
+
+#navlist li a:hover {
+	color: black;
+}
+
+#button {
+	width: 200px;
+	border-radius: 20px;
+	display: block;
+	padding: 30px;
+	background: lightblue;
+	color: gray;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+  border: 5px solid gray;
+}
+
+#button:hover {
+	background-color: gray;
+	color: white;
+}
+
