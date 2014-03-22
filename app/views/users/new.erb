@@ -1,27 +1,29 @@
-<% if @error %>
+<div class="container">
+	<% if @error %>
 
-	<p style="color: red;"><%= @error %></p>
+		<p style="color: red;"><%= @error %></p>
 
-<% end %>
+	<% end %>
 
-<h1>Register</h1>
+	<h1>Register</h1>
 
-<form action="/users" method="post">
-	<p>
-		<label for="name">Name:</label>
-		<input type="text" name="name" placeholder="name"/>
-  </p>
+	<form action="/users" method="post">
+		<p>
+			<label for="name">Name:</label>
+			<input type="text" name="name" placeholder="name"/>
+	  </p>
 
-	<p>
-		<label for="email">Email:</label>
-		<input type="text" name="email" placeholder="email"/>
-  </p>
+		<p>
+			<label for="email">Email:</label>
+			<input type="text" name="email" placeholder="email"/>
+	  </p>
 
-	<p>
-	<label for="password">Password:</label>
-	<input type="password" name="password" placeholder="password"/>
-	</p>
+		<p>
+		<label for="password">Password:</label>
+		<input type="password" name="password" placeholder="password"/>
+		</p>
 
-	<input type="submit" value="register"/>
+		<input type="submit" value="register"/>
 
-</form>
+	</form>
+</div>
