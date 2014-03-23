@@ -31,7 +31,6 @@ end
 post "/surveys" do
   @survey = Survey.create(title: params[:title], user_id: session[:user_id])
   @question = Question.create(text: params[:question], survey_id: @survey.id)
-  params[:possible].shift
   params[:possible].each do |poss|
     PossibleChoice.create(option: poss, question_id: @question.id)
   end
